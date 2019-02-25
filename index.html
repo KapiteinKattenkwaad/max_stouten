@@ -18,10 +18,10 @@
     <nav>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#home">Home</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="#home"  onclick="closeNav()">Home</a>
+            <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#contact" onclick="closeNav()">Contact</a>
         </div>
     </nav>
 
@@ -173,7 +173,7 @@
         <div id="about">
 
             <p class="passion">
-                Self-thaught front-end developer with a passion for beautiful design, constant learning
+                Self-thaught front-end developer <br /> with a passion for beautiful design, <br />constant learning
             </p>
 
             <div id="profile">
@@ -208,12 +208,18 @@
 
 
     <div id="contact">
-        <h2>Contact</h2>
+        <h2 id="contact-header">Contact</h2>
 
-        <button id="mail">
-            <i class="far fa-paper-plane"></i>
-        </button>
+        <p>While I like getting letters in my mailbox, it's much quicker and more eco-friendly to </p>
 
+        <div class="center">
+
+            <button class="button" onclick="location.href='mailto:info@maxstouten.com'">
+                <i class="far fa-paper-plane"></i><span>send me an email </span> 
+            </button>
+        </div>
+        
+        <p>You can find me in the e-world on the next places:</p>
         <div class="links">
 
             <div class="link">
@@ -247,10 +253,18 @@
             </div>
         </div>
 
-        <p>
-            My resume <small>(will open download)</small>
-        </p>
+        <div class="center">
+
+                <button class="button" id="resume" onclick="location.href='mailto:info@maxstouten.com'">
+                        <i class="far fa-user-circle"></i><span>Resume</span> 
+                </button>
+            </div>
+    </a>
     </div>
+
+    <footer>
+       <p> &#169; Max Stouten </p>
+    </footer>
 
 </body>
 
