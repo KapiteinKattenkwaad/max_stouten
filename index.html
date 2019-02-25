@@ -1,69 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Max Stouten | Web Developer</title>
     <link rel="stylesheet" href="css/output.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
     <script src="js/script.js"></script>
 </head>
+
 <body>
-    
+
     <nav>
-            <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#home">Home</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                  </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#home">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
 
-   
-    <span id="hamburger-menu"  onclick="openNav()">&#9776; </span>
+
+    <span id="hamburger-menu" onclick="openNav()">&#9776; </span>
 
     <div id="home">
         <div class="hero-image">
             <div class="hero-text">
-              <h1>Max Stouten</h1>
-              <h3>Web Developer</h3>
-              <button>Hire me</button>
+                <h1>Max Stouten</h1>
+                <h3>Web <br /> Developer</h3>
+
             </div>
-          </div>
+        </div>
     </div>
 
-    
+
 
     <div id="portfolio">
         <h2>Portfolio</h2>
 
-        <div class="portfolio">
+        <div class="items">
             <div class="item">
-                
+                <h3>Calculator</h3>
+                <img src="img/calculator.png" alt="calculator">
+                <p>An in-browser calculator. Made with Vanilla JS and styled with css. </p>
+                <span><a href="https://github.com/KapiteinKattenkwaad/calculator"> <i class="fab fa-github"></i></a>
+                    <a href="https://kapiteinkattenkwaad.github.io/calculator/"> <i class="fas fa-external-link-alt"></i></a>
+                </span>
+            </div>
+
+            <div class="item">
+                <h3>Etch-a-sketch</h3>
+                <img src="img/etch-a-sketch.png" alt="etch-a-sketch">
+                <p>Bring back your childhood memories with this game. Made with vanilla JS. </p>
+                <span><a href="https://github.com/KapiteinKattenkwaad/etch-a-sketch"> <i class="fab fa-github"></i></a>
+                    <a href="https://kapiteinkattenkwaad.github.io/etch-a-sketch/"> <i class="fas fa-external-link-alt"></i></a>
+                </span>
+
+            </div>
+            <div class="item">
+                <h3>Rock paper scissors</h3>
+                <img src="img/rock-paper-scissor.png" alt="rock paper scissor">
+                <p>Try to beat the computer with rock paper scissors. Made with Javascript. </p>
+                <span><a href="https://github.com/KapiteinKattenkwaad/rock_paper_scissors"> <i class="fab fa-github"></i></a>
+                    <a href="https://kapiteinkattenkwaad.github.io/rock_paper_scissors/"> <i class="fas fa-external-link-alt"></i></a>
+                </span>
+            </div>
+            <div class="item">
+                <h3>Hijswerken Stijn</h3>
+                <img src="img/hijswerken.webp" alt="hijswerken stijn">
+                <p>A website for a crane-rental business. The site was built using Wordpress featuring custom styling
+                    and custom Javascript.I also wrote the copy. </p>
+                <a href="http://hijswerkenstijn.be/"> <i class="fas fa-external-link-alt"></i></a>
+                </span>
+            </div>
+            <div class="item">
+                <h3>Local Weather App</h3>
+                <img src="img/local-weather.png" alt="hijswerken stijn">
+                <p>A project I made for FreeCodeCamp. I used the Open-Weather API to get the location and the
+                    temperature of the user. To call the ajax request I used jQuery. </p>
+                <a href="https://codepen.io/KapiteinKattenkwaad/full/rvMZgY"> <i class="fas fa-external-link-alt"></i></a>
+                </span>
+            </div>
+            <div class="item">
+                <h3>Streaming On Twitch</h3>
+                <img src="img/twitch.png" alt="streaming on twitch">
+                <p>A list of Twitch streamers. With the help of the Twitch API I could display who is online or
+                    offline. To do so I used jQuery. </p>
+                <a href="https://codepen.io/KapiteinKattenkwaad/full/rvMZgY"> <i class="fas fa-external-link-alt"></i></a>
+                </span>
             </div>
         </div>
-        <div class="portfolio"></div>
-        <div class="portfolio"></div>
-        <div class="portfolio"></div>
-        <div class="portfolio"></div>
-        <div class="portfolio"></div>
+
+        <h3>Tools that I use frequently</h3>
+        <div class="tools">
+            <div class="tool">
+                <figure> <img src="img/html5.png" alt="html5">
+                    <figcaption> HTML5</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="tool">
+
+                <figure> <img src="img/css3.png" alt="css3">
+                    <figcaption> CSS3</figcaption>
+                </figure>
+            </div>
+
+            <div class="tool">
+                <figure> <img src="img/javascript.png" alt="html5">
+                    <figcaption> Javascript</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="tool">
+                <figure> <img src="img/github.png" alt="github">
+                    <figcaption> Github & Git</figcaption>
+                </figure>
+            </div>
+
+            <div class="tool">
+                <figure> <img src="img/wordpress.png" alt="wordpress">
+                    <figcaption> Wordpress</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <h3>Tools that I use, but less frequently</h3>
+
+        <div class="tools">
+            <div class="tool">
+                <figure> <img src="img/sass.png" alt="sass">
+                    <figcaption> Sass</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="tool">
+                <figure> <img src="img/bootstrap.png" alt="bootstrap">
+                    <figcaption> Bootstrap</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="tool">
+                <figure> <img src="img/bulma.png" alt="bulma">
+                    <figcaption> Bulma</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="tool">
+                <figure> <img src="img/vue.png" alt="vue">
+                    <figcaption> Vue</figcaption>
+                </figure>
+
+            </div>
+
+        </div>
     </div>
 
 
     <div id="about">
         <h2>About</h2>
 
-        
+        <div id="about">
+
+            <p class="passion">
+                Self-thaught front-end developer with a passion for beautiful design, constant learning
+            </p>
+
+            <div id="profile">
+
+                <img src="img/profile.png" alt="max stouten">
+            </div>
+
+
+            <p>
+                Hi, I'm Max. I'm a front-end web developer. After mastering HTML, it wasn't long before CSS hooked me
+                with its creative claws. The animations just blew my mind, and I had a lot of fun styling with <b> CSS
+                    Grid </b> and <b>Flexbox</b>.
+            </p>
+            <p>
+
+
+                Since learning the ins and outs of <b> ES6 </b>, I've been expanding my skillset with <b>FreeCodeCamp
+                </b>, solidifying my knowledge with podcasts, blogs and making websites. When I'm not coding, you’ll
+                find me discovering fine beers, hiking high things, or eating weird food. Drop me a line if you’d like
+                to hear more about any of the above!
+
+            </p>
+
+            <p class="focus">
+                My current focus now is <b> Vue.js </b>.
+            </p>
+
+
+        </div>
+
     </div>
 
 
     <div id="contact">
         <h2>Contact</h2>
 
+        <button id="mail">
+            <i class="far fa-paper-plane"></i>
+        </button>
+
+        <div class="links">
+
+            <div class="link">
+
+                <a href="https://www.linkedin.com/in/max-stouten/" target="_blank">
+
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <div class="link">
+
+                    <a href="https://github.com/KapiteinKattenkwaad"  target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+            <div class="link">
+
+                <a href="https://twitter.com/maxstouten" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+
+
+            <div class="link">
+
+                <a href="https://codepen.io/KapiteinKattenkwaad/" target="_blank">
+                    <i class="fab fa-codepen"></i>
+                </a>
+            </div>
+        </div>
+
+        <p>
+            My resume <small>(will open download)</small>
+        </p>
     </div>
 
 </body>
-</html>
 
+</html>
