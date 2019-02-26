@@ -44,7 +44,7 @@ nav .sidenav a {
   text-decoration: none;
   font-size: 4rem;
   font-family: "Oswald", sans-serif;
-  color: #FFB253;
+  color: #2d2d2c;
   display: block;
   transition: 0.3s;
 }
@@ -89,7 +89,7 @@ nav .closebtn {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #0073A3;
+  color: antiquewhite;
 }
 .hero-image h1 {
   font-size: 5rem;
@@ -112,7 +112,7 @@ nav .closebtn {
 h2 {
   padding-left: 2rem;
   font-size: 4rem;
-  color: #FFB253;
+  color: #2d2d2c;
   margin-top: 12rem;
 }
 
@@ -131,7 +131,7 @@ h3 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FFB253;
+  background: #0073A3;
   border-radius: 10px;
 }
 
@@ -229,17 +229,28 @@ p {
 }
 
 #profile img {
-  width: 20vw;
-  float: left;
   margin: 2em;
+  max-width: 100%;
+  height: auto;
   padding: 1rem;
-  shape-outside: padding-box;
-  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  border-radius: 50%;
+  shape-outside: margin-box;
+  float: left;
 }
 
-#profile img:hover {
-  clip-path: circle(50% at 50% 50%);
-  transition-duration: 0.3s;
+p.resume {
+  padding-top: 3rem;
+}
+
+p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0073A3;
+}
+
+p a:hover {
+  text-decoration: underline;
+  color: #2d2d2c;
 }
 
 /* contact */
@@ -261,6 +272,11 @@ p {
   transition-duration: 0.3s;
 }
 
+.stalk {
+  text-align: center;
+  font-size: 2rem;
+}
+
 .button {
   margin-bottom: 4rem;
   padding: 2rem;
@@ -268,7 +284,7 @@ p {
   font-size: 1.5rem;
   cursor: pointer;
   border-radius: 5px;
-  border: 1px solid #FFB253;
+  border: 1px solid #2d2d2c;
   background-color: antiquewhite;
   color: #0073A3;
 }
@@ -305,6 +321,10 @@ p {
   transition-duration: 0.3s;
 }
 
+#stalk {
+  margin-top: 3rem;
+}
+
 footer {
   text-align: center;
   padding: 0.5rem;
@@ -318,10 +338,19 @@ footer {
   #hamburger-menu {
     margin-left: 90vw;
   }
+
+  #profile img {
+    width: 30%;
+  }
 }
 @media screen and (max-width: 750px) {
   #hamburger-menu {
     margin-left: 80vw;
+  }
+
+  #profile img {
+    width: 60%;
+    shape-outside: none;
   }
 }
 /* bigger screens */
