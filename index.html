@@ -6,20 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Max Stouten | Web Developer</title>
-    <link rel="shortcut icon" type="image/png" href="/img/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
     <link rel="stylesheet" href="css/output.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+
+
 </head>
 
 <body>
 
+
     <nav>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#home"  onclick="closeNav()">Home</a>
+            <a href="#home" onclick="closeNav()">Home</a>
             <a href="#portfolio" onclick="closeNav()">Portfolio</a>
             <a href="#about" onclick="closeNav()">About</a>
             <a href="#contact" onclick="closeNav()">Contact</a>
@@ -32,8 +37,8 @@
     <div id="home">
         <div class="hero-image">
             <div class="hero-text">
-                <h1>Max Stouten</h1>
-                <h3>Web <br /> Developer</h3>
+                <h1 id="head-title">Max Stouten</h1>
+                <h3 id="sub-title">Web <br /> Developer</h3>
 
             </div>
         </div>
@@ -48,56 +53,56 @@
             <div class="item">
                 <h3>Calculator</h3>
                 <img src="img/calculator.png" alt="calculator">
-                <p>An in-browser calculator. Made with Vanilla JS and styled with css. </p>
+                <p>I created this in-browser calculator with Vanilla JS and CSS </p>
                 <span><a href="https://github.com/KapiteinKattenkwaad/calculator"> <i class="fab fa-github"></i></a>
                     <a href="https://kapiteinkattenkwaad.github.io/calculator/"> <i class="fas fa-external-link-alt"></i></a>
                 </span>
             </div>
 
             <div class="item">
-                <h3>Etch-a-sketch</h3>
+                <h3>Etch A Sketch</h3>
                 <img src="img/etch-a-sketch.png" alt="etch-a-sketch">
-                <p>Bring back your childhood memories with this game. Made with vanilla JS. </p>
+                <p>To help you throw it back to your childhood, I created this game with Vanilla JS. </p>
                 <span><a href="https://github.com/KapiteinKattenkwaad/etch-a-sketch"> <i class="fab fa-github"></i></a>
                     <a href="https://kapiteinkattenkwaad.github.io/etch-a-sketch/"> <i class="fas fa-external-link-alt"></i></a>
                 </span>
 
             </div>
             <div class="item">
-                <h3>Rock paper scissors</h3>
+                <h3>Rock-Paper-Scissors</h3>
                 <img src="img/rock-paper-scissor.png" alt="rock paper scissor">
-                <p>Try to beat the computer with rock paper scissors. Made with Javascript. </p>
+                <p>Try to beat the computer in this game of rock-paper-scissors I built with JavaScript. </p>
                 <span><a href="https://github.com/KapiteinKattenkwaad/rock_paper_scissors"> <i class="fab fa-github"></i></a>
                     <a href="https://kapiteinkattenkwaad.github.io/rock_paper_scissors/"> <i class="fas fa-external-link-alt"></i></a>
                 </span>
             </div>
             <div class="item">
                 <h3>Hijswerken Stijn</h3>
-                <img src="img/hijswerken.webp" alt="hijswerken stijn">
-                <p>A website for a crane-rental business. The site was built using Wordpress featuring custom styling
-                    and custom Javascript.I also wrote the copy. </p>
+                <img src="img/hijswerken.png" alt="hijswerken stijn">
+                <p>A website for a crane-rental business which I built (and provided copy for) using WordPress
+                    featuring custom styling and custom JavaScript. </p>
                 <a href="http://hijswerkenstijn.be/"> <i class="fas fa-external-link-alt"></i></a>
                 </span>
             </div>
             <div class="item">
                 <h3>Local Weather App</h3>
-                <img src="img/local-weather.png" alt="hijswerken stijn">
-                <p>A project I made for FreeCodeCamp. I used the Open-Weather API to get the location and the
-                    temperature of the user. To call the ajax request I used jQuery. </p>
+                <img src="img/local-weather.png" alt="local weather">
+                <p>I made this weather app for FreeCodeCamp using the Openweather API to get the user’s location and
+                    jQuery to call the ajax request. </p>
                 <a href="https://codepen.io/KapiteinKattenkwaad/full/rvMZgY"> <i class="fas fa-external-link-alt"></i></a>
                 </span>
             </div>
             <div class="item">
-                <h3>Streaming On Twitch</h3>
+                <h3>Streaming on Twitch</h3>
                 <img src="img/twitch.png" alt="streaming on twitch">
-                <p>A list of Twitch streamers. With the help of the Twitch API I could display who is online or
-                    offline. To do so I used jQuery. </p>
+                <p>I created this list of Twitch streamers. With the help of the Twitch API I can display who is online
+                    or offline using jQuery to call the ajax request.</p>
                 <a href="https://codepen.io/KapiteinKattenkwaad/full/rvMZgY"> <i class="fas fa-external-link-alt"></i></a>
                 </span>
             </div>
         </div>
 
-        <h3>Tools that I use frequently</h3>
+        <h2>Skills</h2>
         <div class="tools">
             <div class="tool">
                 <figure> <img src="img/html5.png" alt="html5">
@@ -127,29 +132,25 @@
             </div>
 
             <div class="tool">
-                    <figure> <img src="img/sass.png" alt="sass">
-                        <figcaption> Sass</figcaption>
-                    </figure>
-    
-                </div>
+                <figure> <img src="img/sass.png" alt="sass">
+                    <figcaption> Sass</figcaption>
+                </figure>
+
+            </div>
 
             <div class="tool">
                 <figure> <img src="img/wordpress.png" alt="wordpress">
                     <figcaption> Wordpress</figcaption>
                 </figure>
             </div>
-        </div>
 
-        <h3>Tools that I use, but less frequently</h3>
 
-        <div class="tools">
-            
-                <div class="tool">
-                        <figure> <img src="img/jquery.png" alt="jquery">
-                            <figcaption> jQuery</figcaption>
-                        </figure>
-        
-                    </div>
+            <div class="tool">
+                <figure> <img src="img/jquery.png" alt="jquery">
+                    <figcaption> jQuery</figcaption>
+                </figure>
+
+            </div>
 
             <div class="tool">
                 <figure> <img src="img/bootstrap.png" alt="bootstrap">
@@ -177,109 +178,124 @@
 
 
     <div id="about">
-        <h2>About</h2>
+        <h2>Who am I?</h2>
 
         <div id="about">
 
-           
-                <p class="passion">
-                        Self-taught front-end  web developer <br /> passionate about user-friendly web site design 
-                    </p>
+
+            <p class="passion">
+                My name’s Max, <br /> and I’m a front-end web developer <br />  who’s passionate about creating user-friendly websites.
+            </p>
+
+            
             <div id="profile">
                 <img src="img/profile.png" alt="max stouten">
             </div>
+        
 
-         
 
             <p>
-                Hi, I'm Max. I'm a front-end web developer, based in Antwerp. After mastering HTML, it wasn't long before CSS hooked me
-                with its creative claws. The animations just blew my mind, and I had a lot of fun styling with <b> CSS
-                    Grid </b> and <b>Flexbox</b>.
-            </p>
-            <p>
+                I love mastering new technologies, building websites and exploring ways to make them more
+                user-friendly. <br /> 
+                When I'm not coding, you’ll find me discovering fine beers, hiking high things, and eating new foods. <br /> 
+                I’m very easy-going, so please reach out if you’d like <a href="#contact"> to chat about any of the above. </a>
 
-
-                Since learning the ins and outs of <b> ES6 </b>, I've been expanding my skillset with <b>FreeCodeCamp
-                </b>, solidifying my knowledge with podcasts, blogs and making websites. When I'm not coding, you’ll
-                find me discovering fine beers, hiking high things, or eating weird food. Drop me a line if you’d like
-                to hear more about any of the above!
 
             </p>
 
-            <p class="focus">
-                My current focus now is <b> Vue.js </b>.
-            </p>
 
-            <p class="resume"> <a href="https://drive.google.com/file/d/1ACMZd4x6OYL9hP3O3HRJRQVC96yXT4CC/view?usp=sharing" target="_blank" download>See my resume</a> </p>
+
         </div>
 
-        
+
 
     </div>
 
 
     <div id="contact">
-        <h2 id="contact-header">Reach out</h2>
+
+
+        <h2>Contact me</h2>
+
+        <form>
+                <ul class="form-style-1">
+                    <li><label> Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" id="first" required/> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+                    <li>
+                        <label>Email <span class="required">*</span></label>
+                        <input type="email" name="field3" class="field-long" placeholder="example@example.com" required />
+                    </li>
+                    <li>
+                        <label>Your Message <span class="required">*</span></label>
+                        <textarea name="field5" id="field5" class="field-long field-textarea" required></textarea>
+                    </li>
+                    <li>
+                        <input type="submit" value="Send away" class="button"/>
+                    </li>
+                </ul>
+                </form>
         
 
-        
-        
-        <div class="center">
-            <span title="info@maxstouten.com">
-            <button class="button" onclick="location.href='mailto:info@maxstouten.com'">
-                    <i class="far fa-paper-plane"></i><span>send me an email </span> 
-                </button>
-                </span>
-            </div>
+     <h2 >Or stalk me on...</h2>
 
-           
-            <h2 id="stalk">Or stalk me on...</h2>
         <div class="links">
 
             <div class="link">
 
                 <span title="Linkedin">
-                <a href="https://www.linkedin.com/in/max-stouten/" target="_blank">
+                    <a href="https://www.linkedin.com/in/max-stouten/" target="_blank">
 
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                 </span>
             </div>
 
             <div class="link">
-                    <span title="Github">
-                    <a href="https://github.com/KapiteinKattenkwaad"  target="_blank">
+                <span title="Github">
+                    <a href="https://github.com/KapiteinKattenkwaad" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
-                    </span>
-                </div>
+                </span>
+            </div>
 
             <div class="link">
-                    <span title="Twitter">
-                <a href="https://twitter.com/maxstouten" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                    </span>
+                <span title="Twitter">
+                    <a href="https://twitter.com/maxstouten" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </span>
             </div>
 
 
             <div class="link">
-                    <span title="Codepen">
-                <a href="https://codepen.io/KapiteinKattenkwaad/" target="_blank">
-                    <i class="fab fa-codepen"></i>
-                </a>
-                    </span>
+                <span title="Codepen">
+                    <a href="https://codepen.io/KapiteinKattenkwaad/" target="_blank">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </span>
             </div>
         </div>
 
-       
-    </a>
+
+        </a>
     </div>
 
     <footer>
-       <p> &#169; Max Stouten </p>
-       <p> <a href="mailto:info@maxstouten.com">info@maxstouten.com</a> </p>
+        <p> &#169; Max Stouten </p>
+        <p> <a href="mailto:info@maxstouten.com">info@maxstouten.com</a> </p>
     </footer>
+
+
+    <script>
+        let test = document.getElementById("test")
+
+        var waypoint = new Waypoint({
+            element: document.getElementById('test'),
+            handler: function () {
+                test.className += 'add-animation ';
+            }
+        })
+    </script>
+
 
 </body>
 
