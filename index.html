@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <script src="js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
 
 
 </head>
@@ -47,7 +45,7 @@
 
 
     <div id="portfolio">
-        <h2>Portfolio</h2>
+        <h2 id="portfolio">Portfolio</h2>
 
         <div class="items">
             <div class="item">
@@ -102,7 +100,7 @@
             </div>
         </div>
 
-        <h2>Skills</h2>
+        <h2 id="skills">Skills</h2>
         <div class="tools">
             <div class="tool">
                 <figure> <img src="img/html5.png" alt="html5">
@@ -178,7 +176,7 @@
 
 
     <div id="about">
-        <h2>Who am I?</h2>
+        <h2 id="who">Who am I?</h2>
 
         <div id="about">
 
@@ -215,9 +213,9 @@
     <div id="contact">
 
 
-        <h2>Contact me</h2>
+        <h2 id="contactMe">Contact me</h2>
 
-        <form>
+        <form name="contact" action="https://formspree.io/info@maxstouten.com" method="POST">
                 <ul class="form-style-1">
                     <li><label> Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" id="first" required/> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
                     <li>
@@ -230,12 +228,14 @@
                     </li>
                     <li>
                         <input type="submit" value="Send away" class="button"/>
+                        <input type="hidden" name="_next" value="thanks.html" />
+
                     </li>
                 </ul>
                 </form>
         
 
-     <h2 >Or stalk me on...</h2>
+     <h2 id="stalk">Or stalk me on...</h2>
 
         <div class="links">
 
@@ -284,19 +284,58 @@
         <p> <a href="mailto:info@maxstouten.com">info@maxstouten.com</a> </p>
     </footer>
 
+    
+    <script src="https://cdn.jsdelivr.net/npm/scrollmagic@2.0.6/scrollmagic/uncompressed/ScrollMagic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
 
     <script>
-        let test = document.getElementById("test")
+    
+        //animations
 
-        var waypoint = new Waypoint({
-            element: document.getElementById('test'),
-            handler: function () {
-                test.className += 'add-animation ';
-            }
+        let controller = new ScrollMagic.Controller();
+
+        let scene = new ScrollMagic.Scene({
+            triggerElement: '#stalk',
+            duration: 2000,
+            triggerHook: 1,
         })
+        .setClassToggle('#stalk', 'fadeInLeft')
+        .addTo(controller);
+
+        let scene1 = new ScrollMagic.Scene({
+            triggerElement: '#portfolio',
+            duration: 2000,
+            triggerHook: 1,
+        })
+        .setClassToggle('#portfolio', 'fadeInLeft')
+        .addTo(controller);
+
+        let scene2 = new ScrollMagic.Scene({
+            triggerElement: '#skills',
+            duration: 2000,
+            triggerHook: 1,
+        })
+        .setClassToggle('#skills', 'fadeInLeft')
+        .addTo(controller);
+
+        let scene3 = new ScrollMagic.Scene({
+            triggerElement: '#contactMe',
+            duration: 2000,
+            triggerHook: 1,
+        })
+        .setClassToggle('#contactMe', 'fadeInLeft')
+        .addTo(controller);
+
+        let scene4 = new ScrollMagic.Scene({
+            triggerElement: '#who',
+            duration: 2000,
+            triggerHook: 1,
+        })
+        .setClassToggle('#who', 'fadeInLeft')
+        .addTo(controller);
+
+    
     </script>
-
-
 </body>
 
 </html>
