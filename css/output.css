@@ -301,8 +301,8 @@ select {
   -moz-box-sizing: border-box;
   border: 1px solid #BEBEBE;
   border-radius: 5px;
-  padding: 1rem;
-  font-size: 1.8rem;
+  padding: 0.8rem;
+  font-size: 1.5rem;
   margin: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -323,7 +323,7 @@ select {
 }
 
 .form-style-1 .field-divided {
-  width: 48%;
+  width: 49%;
 }
 
 .form-style-1 .field-long {
@@ -340,8 +340,8 @@ select {
 
 .form-style-1 input[type=submit], .form-style-1 input[type=button] {
   background: #0073A3;
-  padding: 1.8rem 2.8rem;
-  font-size: 2.5rem;
+  padding: 1.5rem 2.8rem;
+  font-size: 2.2rem;
   border: none;
   color: #fff;
 }
@@ -459,6 +459,15 @@ footer {
     margin: auto;
     max-width: 400px;
   }
+
+  .form-style-1 .field-divided {
+    width: 100%;
+    margin-top: 1rem !important;
+  }
+
+  .tools {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 }
 /* bigger screens */
 @media screen and (min-width: 1125px) {
@@ -488,4 +497,40 @@ footer {
   }
 }
 
+.center-thanks {
+  margin: 0;
+  padding: 0;
+}
+
+.center-thanks p, h1, img {
+  margin-left: 1rem;
+}
+
+.center-thanks img {
+  margin-top: 1rem;
+}
+
 /*# sourceMappingURL=output.css.map */
+
+/* animations*/
+h2 {
+  animation-duration: 1s;
+  transition: 1s;
+  opacity: 0.1;
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  opacity: 1;
+}
