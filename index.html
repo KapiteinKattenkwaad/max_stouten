@@ -33,8 +33,19 @@
     <span id="hamburger-menu" onclick="openNav()">&#9776; </span>
 
     <div id="home">
-        <div class="hero-image">
-            <div class="hero-text">
+            <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                   
+                </section>
+       <!-- <div class="hero-image">
+            <div class="hero-text"> -->
                 <h1 id="head-title">Max Stouten</h1>
                 <h3 id="sub-title">Web <br /> Developer</h3>
 
@@ -291,6 +302,7 @@
     <script>
     
         //animations
+        //scroll h2
 
         let controller = new ScrollMagic.Controller();
 
@@ -334,7 +346,61 @@
         .setClassToggle('#who', 'fadeInLeft')
         .addTo(controller);
 
-    
+    //animation hero
+
+    let tl = anime.timeline({
+            easing: 'easeOutExpo',
+            duration: 750,
+        })
+
+        tl.add({
+            targets: 'section div',
+            width: '100%',
+            backgroundColor: 'rgb(197, 197,255)',
+            delay: anime.stagger(100)
+        })
+
+        tl.add({
+            targets: 'section div',
+            width: '90%',
+            backgroundColor: 'rgb(235, 235,255)',
+           
+        })
+
+        tl.add({
+            targets: 'h1',
+            top: '20%',
+            opacity: 1,
+            duration: 4000
+            
+        }, '-=1600')
+
+        tl.add({
+            targets: '#sub-title',
+            top: '60%',
+            opacity: 1,
+            duration: 4000
+            
+        }, '-=2000')
+
+        let rotateMe = anime({
+            targets: 'section',
+            scaleY: '2',
+            scaleX: '2',
+            translateX: '40%',
+            rotate: '45deg',
+            duration: 2000,
+            transition: 1000,
+            autoplay: false
+        })
+
+        document.querySelector('#head-title').addEventListener('mouseover', () => {
+            rotateMe.play();
+        })
+
+        document.querySelector('#head-title').addEventListener('mouseout', () => {
+            rotateMe.reverse();
+        })
     </script>
 </body>
 
