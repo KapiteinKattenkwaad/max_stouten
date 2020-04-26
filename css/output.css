@@ -141,12 +141,16 @@ nav .closebtn {
 
 /* background image */
 .hero-image {
+  background-image: url("/img/gamer-monochrome.svg");
   background-attachment: fixed;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: relative;
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 .hero-image .hero-text {
   font-family: "Oswald", sans-serif;
