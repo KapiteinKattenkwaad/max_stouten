@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 </head>
@@ -64,7 +65,14 @@
 
             </div>
         </div>
-        <div class="cards container">
+        <div class="cards container"
+             data-aos="zoom-in-up"
+             data-aos-offset="200"
+             data-aos-delay="50"
+             data-aos-duration="10"
+             data-aos-easing="ease-in-out"
+             data-aos-once="true"
+            >
             <div class="card">
                 <h3 class="card__title">
                     TheValueChain - CMS
@@ -159,12 +167,18 @@
         </div>
 
         <h2 id="skills" class="big__title--margin-top">Skills</h2>
-        <div class="tools">
+        <div class="tools"
+             data-aos="zoom-in-up"
+             data-aos-offset="200"
+             data-aos-delay="50"
+             data-aos-duration="10"
+             data-aos-easing="ease-in-out"
+             data-aos-once="true"
+            >
             <div class="tool">
                 <figure> <img src="img/html5.png" alt="html5">
                     <figcaption> HTML5</figcaption>
                 </figure>
-
             </div>
 
             <div class="tool">
@@ -237,7 +251,14 @@
         <h2 id="who" class="big__title--margin-top">Who am I?</h2>
         <div class="flex-box container--small">
             <div class="flex-wrapper--1">
-                <div class="about__img">
+                <div class="about__img"
+                     data-aos="zoom-in-up"
+                     data-aos-offset="200"
+                     data-aos-delay="50"
+                     data-aos-duration="10"
+                     data-aos-easing="ease-in-out"
+                     data-aos-once="true"
+                    >
                     <img src="img/max-round@2x.png" alt="max stouten">
                 </div>
             </div>
@@ -281,7 +302,14 @@
                 </form>
 
      <h2 id="stalk">Or find me on...</h2>
-        <div class="links">
+        <div class="links"
+             data-aos="zoom-in-up"
+             data-aos-offset="200"
+             data-aos-delay="50"
+             data-aos-duration="10"
+             data-aos-easing="ease-in-out"
+             data-aos-once="true"
+            >
             <div class="link">
                 <span title="Linkedin">
                     <a href="https://www.linkedin.com/in/max-stouten/" target="_blank">
@@ -318,9 +346,11 @@
 
 
 </body>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script async>
   document.getElementById("year").innerHTML = new Date().getFullYear();
+
+  AOS.init();
 </script>
 
 </html>
