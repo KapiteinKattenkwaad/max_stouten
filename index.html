@@ -23,7 +23,7 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#home" onclick="closeNav()">Home</a>
-            <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+            <a href="#portfolio" onclick="closeNav()">Work</a>
             <a href="#about" onclick="closeNav()">About</a>
             <a href="#contact" onclick="closeNav()">Contact</a>
         </div>
@@ -32,7 +32,7 @@
 
     <span id="hamburger-menu" onclick="openNav()">&#9776; </span>
 
-    <div id="home">
+    <section class="home" id="home">
             <section>
                     <div></div>
                     <div></div>
@@ -44,74 +44,121 @@
                     <div></div>
                    
                 </section>
-       <!-- <div class="hero-image">
-            <div class="hero-text"> -->
-                <h1 id="head-title">Max Stouten</h1>
-                <h3 id="sub-title">Web <br /> Developer</h3>
-
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1 id="head-title" class="hero-text__title">Max Stouten</h1>
+                <h3 id="sub-title" class="hero-text__subtitle">Web <br /> Developer</h3>
             </div>
         </div>
-    </div>
+    </section>
 
 
 
     <div id="portfolio">
-        <h2 id="portfolio">Portfolio</h2>
+        <h2 class="big__title">Work</h2>
+        <h6 class="small__title">
+            Clients I've worked with:
+        </h6>
+        <div class="work__clients">
+            <div class="work__client">
 
-        <div class="items">
-            <div class="item">
-                <h3>Calculator</h3>
-                <img src="img/calculator.png" alt="calculator">
-                <p>I created this in-browser calculator with Vanilla JS and CSS </p>
-                <span><a href="https://github.com/KapiteinKattenkwaad/calculator"> <i class="fab fa-github"></i></a>
-                    <a href="https://kapiteinkattenkwaad.github.io/calculator/"> <i class="fas fa-external-link-alt"></i></a>
-                </span>
-            </div>
-
-            <div class="item">
-                <h3>Etch A Sketch</h3>
-                <img src="img/etch-a-sketch.png" alt="etch-a-sketch">
-                <p>To help you throw it back to your childhood, I created this game with Vanilla JS. </p>
-                <span><a href="https://github.com/KapiteinKattenkwaad/etch-a-sketch"> <i class="fab fa-github"></i></a>
-                    <a href="https://kapiteinkattenkwaad.github.io/etch-a-sketch/"> <i class="fas fa-external-link-alt"></i></a>
-                </span>
-
-            </div>
-            <div class="item">
-                <h3>Rock-Paper-Scissors</h3>
-                <img src="img/rock-paper-scissor.png" alt="rock paper scissor">
-                <p>Try to beat the computer in this game of rock-paper-scissors I built with JavaScript. </p>
-                <span><a href="https://github.com/KapiteinKattenkwaad/rock_paper_scissors"> <i class="fab fa-github"></i></a>
-                    <a href="https://kapiteinkattenkwaad.github.io/rock_paper_scissors/"> <i class="fas fa-external-link-alt"></i></a>
-                </span>
-            </div>
-            <div class="item">
-                <h3>Hijswerken Stijn</h3>
-                <img src="img/hijswerken.png" alt="hijswerken stijn">
-                <p>A website for a crane-rental business which I built (and provided copy for) using WordPress
-                    featuring custom styling and custom JavaScript. </p>
-                <a href="http://hijswerkenstijn.be/"> <i class="fas fa-external-link-alt"></i></a>
-                </span>
-            </div>
-            <div class="item">
-                <h3>Local Weather App</h3>
-                <img src="img/local-weather.png" alt="local weather">
-                <p>I made this weather app for FreeCodeCamp using the Openweather API to get the user’s location and
-                    jQuery to call the ajax request. </p>
-                <a href="https://codepen.io/KapiteinKattenkwaad/full/rvMZgY"> <i class="fas fa-external-link-alt"></i></a>
-                </span>
-            </div>
-            <div class="item">
-                <h3>Streaming on Twitch</h3>
-                <img src="img/twitch.png" alt="streaming on twitch">
-                <p>I created this list of Twitch streamers. With the help of the Twitch API I can display who is online
-                    or offline using jQuery to call the ajax request.</p>
-                <a href="https://codepen.io/KapiteinKattenkwaad/full/rvMZgY"> <i class="fas fa-external-link-alt"></i></a>
-                </span>
             </div>
         </div>
+        <div class="cards container">
+            <div class="card">
+                <h3 class="card__title">
+                    TheValueChain - CMS
+                </h3>
+                <div class="card__img">
+                    <img src="img/tvc%20maxstouten.png" alt="tvc max stouten">
+                </div>
+                <p class="card__text">
+                    Craft CMS website with custom development.
+                </p>
+                <div class="card__tech">
+                   Front-end development, custom CMS development
+                </div>
+                <div class="card__link u-link">
+                    <a href="https://thevaluechain.be/" target="_blank">Go to website</a>
+                </div>
+            </div>
 
-        <h2 id="skills">Skills</h2>
+            <div class="card">
+                <h3 class="card__title">
+                    GONOW - Landingpage
+                </h3>
+                <div class="card__img">
+                    <img src="img/gonow%20maxstouten.png" alt="landingpage max stouten">
+                </div>
+                <p class="card__text">
+                    Custom landingpage.
+                </p>
+                <div class="card__tech">
+                    Front-end development
+                </div>
+                <div class="card__link u-link">
+                    <a href="https://thevaluechain.be/" target="_blank">Go to website</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card__title">
+                    Local weather app
+                </h3>
+                <div class="card__img">
+                    <img src="img/local-weather.png" alt="weather app website max stouten">
+                </div>
+                <p class="card__text">
+                    A website to see the current weather. Made with the fcc weather api.
+                </p>
+                <div class="card__tech">
+                   Front-end development, API
+                </div>
+                <div class="card__link u-link">
+                    <a href="https://codepen.io/KapiteinKattenkwaad/full/rvMZgY" target="_blank">Go to website</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card__title">
+                   Pinky Photography - Freelancer website
+                </h3>
+                <div class="card__img">
+                    <img src="img/pinky%20maxstouten.png" alt="website max stouten">
+                </div>
+                <p class="card__text">
+                    Brand new website for a freelance photographer.
+                </p>
+                <div class="card__tech">
+                    Front-end development
+                </div>
+                <div class="card__link u-link">
+                    <a href="https://pinky-photo.netlify.app/" target="_blank">Go to website</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <h3 class="card__title">
+                    Wedding website
+                </h3>
+                <div class="card__img">
+                    <img src="img/anoukseppe%20maxstouten.png" alt="wedding website max stouten">
+                </div>
+                <p class="card__text">
+                    A wedding website for Anouk & Seppe.
+                </p>
+                <div class="card__tech">
+                    Front end development
+                </div>
+                <div class="card__link u-link">
+                    <a href="https://anoukenseppe.netlify.app/" target="_blank">Go to website</a>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 id="skills" class="big__title--margin-top">Skills</h2>
         <div class="tools">
             <div class="tool">
                 <figure> <img src="img/html5.png" alt="html5">
@@ -121,7 +168,6 @@
             </div>
 
             <div class="tool">
-
                 <figure> <img src="img/css3.png" alt="css3">
                     <figcaption> CSS3</figcaption>
                 </figure>
@@ -131,12 +177,23 @@
                 <figure> <img src="img/javascript.png" alt="html5">
                     <figcaption> Javascript</figcaption>
                 </figure>
+            </div>
 
+            <div class="tool">
+                <figure> <img src="img/jquery.png" alt="jquery">
+                    <figcaption> jQuery</figcaption>
+                </figure>
             </div>
 
             <div class="tool">
                 <figure> <img src="img/github.png" alt="github">
-                    <figcaption> Github & Git</figcaption>
+                    <figcaption> Github</figcaption>
+                </figure>
+            </div>
+
+            <div class="tool">
+                <figure> <img src="img/git2.png" alt="git">
+                    <figcaption>Git</figcaption>
                 </figure>
             </div>
 
@@ -144,21 +201,6 @@
                 <figure> <img src="img/sass.png" alt="sass">
                     <figcaption> Sass</figcaption>
                 </figure>
-
-            </div>
-
-            <div class="tool">
-                <figure> <img src="img/wordpress.png" alt="wordpress">
-                    <figcaption> Wordpress</figcaption>
-                </figure>
-            </div>
-
-
-            <div class="tool">
-                <figure> <img src="img/jquery.png" alt="jquery">
-                    <figcaption> jQuery</figcaption>
-                </figure>
-
             </div>
 
             <div class="tool">
@@ -179,7 +221,12 @@
                 <figure> <img src="img/vue.png" alt="vue">
                     <figcaption> Vue</figcaption>
                 </figure>
+            </div>
 
+            <div class="tool">
+                <figure> <img src="img/craft-cms.png" alt="craft cms">
+                    <figcaption>Craft CMS</figcaption>
+                </figure>
             </div>
 
         </div>
@@ -187,45 +234,33 @@
 
 
     <div id="about">
-        <h2 id="who">Who am I?</h2>
-
-        <div id="about">
-
-
-            <p class="passion">
-                My name’s Max, <br /> and I’m a front-end web developer <br />  who’s passionate about creating user-friendly websites.
-            </p>
-
-            
-            <div id="profile">
-                <img src="img/profile.png" alt="max stouten">
+        <h2 id="who" class="big__title--margin-top">Who am I?</h2>
+        <div class="flex-box container--small">
+            <div class="flex-wrapper--1">
+                <div class="about__img">
+                    <img src="img/max-round@2x.png" alt="max stouten">
+                </div>
             </div>
-        
-
-
-            <p>
-                I love mastering new technologies, building websites and exploring ways to make them more
-                user-friendly. <br /> 
-                When I'm not coding, you’ll find me discovering fine beers, hiking high things, and eating new foods. <br /> 
-                I’m very easy-going, so please reach out if you’d like <a href="#contact"> to chat about any of the above. </a>
-
-
-            </p>
-
-
-
+             <div class="flex-wrapper--2">
+                <p class="about__passion">
+                    My name’s Max, <br /> and I’m a front-end web developer <br />  who’s passionate about creating user-friendly websites.
+                </p>
+                <p>
+                    I love mastering new technologies, building websites and exploring ways to make them more
+                    user-friendly. <br />
+                    When I'm not coding, you’ll find me discovering fine beers, hiking high things, and eating new foods. <br />
+                    I’m very easy-going, so please reach out <br> if you’d like
+                    <span class="u-link">
+                        <a href="#contact"> to chat about any of the above. </a>
+                    </span>
+                </p>
+            </div>
         </div>
-
-
-
     </div>
 
 
     <div id="contact">
-
-
-        <h2 id="contactMe">Contact me</h2>
-
+        <h2 id="contactMe" class="big__title--margin-top">Contact me</h2>
         <form name="contact" action="https://formspree.io/info@maxstouten.com" method="POST">
                 <ul class="form-style-1">
                     <li><label> Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" id="first" required/> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
@@ -244,14 +279,10 @@
                     </li>
                 </ul>
                 </form>
-        
 
-     <h2 id="stalk">Or stalk me on...</h2>
-
+     <h2 id="stalk">Or find me on...</h2>
         <div class="links">
-
             <div class="link">
-
                 <span title="Linkedin">
                     <a href="https://www.linkedin.com/in/max-stouten/" target="_blank">
 
@@ -269,15 +300,6 @@
             </div>
 
             <div class="link">
-                <span title="Twitter">
-                    <a href="https://twitter.com/maxstouten" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </span>
-            </div>
-
-
-            <div class="link">
                 <span title="Codepen">
                     <a href="https://codepen.io/KapiteinKattenkwaad/" target="_blank">
                         <i class="fab fa-codepen"></i>
@@ -286,122 +308,19 @@
             </div>
         </div>
 
-
-        </a>
     </div>
 
     <footer>
-        <p> &#169; Max Stouten </p>
-        <p> <a href="mailto:info@maxstouten.com">info@maxstouten.com</a> </p>
+        <p> &#169; Max Stouten - <span id="year"></span> </p>
+        <p> <a href="mailto:info@maxstouten.com">info[@]maxstouten.com</a> </p>
     </footer>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/scrollmagic@2.0.6/scrollmagic/uncompressed/ScrollMagic.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
 
-    <script>
-    
-        //animations
-        //scroll h2
 
-        let controller = new ScrollMagic.Controller();
-
-        let scene = new ScrollMagic.Scene({
-            triggerElement: '#stalk',
-            duration: 2000,
-            triggerHook: 1,
-        })
-        .setClassToggle('#stalk', 'fadeInLeft')
-        .addTo(controller);
-
-        let scene1 = new ScrollMagic.Scene({
-            triggerElement: '#portfolio',
-            duration: 2000,
-            triggerHook: 1,
-        })
-        .setClassToggle('#portfolio', 'fadeInLeft')
-        .addTo(controller);
-
-        let scene2 = new ScrollMagic.Scene({
-            triggerElement: '#skills',
-            duration: 2000,
-            triggerHook: 1,
-        })
-        .setClassToggle('#skills', 'fadeInLeft')
-        .addTo(controller);
-
-        let scene3 = new ScrollMagic.Scene({
-            triggerElement: '#contactMe',
-            duration: 2000,
-            triggerHook: 1,
-        })
-        .setClassToggle('#contactMe', 'fadeInLeft')
-        .addTo(controller);
-
-        let scene4 = new ScrollMagic.Scene({
-            triggerElement: '#who',
-            duration: 2000,
-            triggerHook: 1,
-        })
-        .setClassToggle('#who', 'fadeInLeft')
-        .addTo(controller);
-
-    //animation hero
-
-    let tl = anime.timeline({
-            easing: 'easeOutExpo',
-            duration: 750,
-        })
-
-        tl.add({
-            targets: 'section div',
-            width: '100%',
-            backgroundColor: 'rgb(197, 197,255)',
-            delay: anime.stagger(100)
-        })
-
-        tl.add({
-            targets: 'section div',
-            width: '90%',
-            backgroundColor: 'rgb(235, 235,255)',
-           
-        })
-
-        tl.add({
-            targets: 'h1',
-            top: '20%',
-            opacity: 1,
-            duration: 4000
-            
-        }, '-=1600')
-
-        tl.add({
-            targets: '#sub-title',
-            top: '60%',
-            opacity: 1,
-            duration: 4000
-            
-        }, '-=2000')
-
-        let rotateMe = anime({
-            targets: 'section',
-            scaleY: '2',
-            scaleX: '2',
-            translateX: '40%',
-            rotate: '45deg',
-            duration: 2000,
-            transition: 1000,
-            autoplay: false
-        })
-
-        document.querySelector('#head-title').addEventListener('mouseover', () => {
-            rotateMe.play();
-        })
-
-        document.querySelector('#head-title').addEventListener('mouseout', () => {
-            rotateMe.reverse();
-        })
-    </script>
 </body>
+
+<script async>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 
 </html>
