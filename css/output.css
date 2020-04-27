@@ -14,12 +14,11 @@ h2 {
   padding-left: 2.2rem;
   font-size: 4rem;
   color: #FFFFFF;
-  background: linear-gradient(135deg, rgba(3, 113, 156, 0.8), rgba(15, 155, 142, 0.8));
+  background: #373346;
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.0625em;
 }
 
 p {
@@ -33,17 +32,12 @@ p {
   margin-top: 1rem;
 }
 .u-link a {
-  color: #0F9B8E;
+  color: #373346;
   padding: 4px 4px 5px 4px;
   transition: all 0.3s ease;
   margin-top: 1rem;
   text-decoration: none;
   border-radius: 5px;
-}
-.u-link a:hover {
-  background-color: #0F9B8E;
-  color: white;
-  text-decoration: none;
 }
 
 /* ANIMATIONS */
@@ -92,7 +86,7 @@ p {
   z-index: 1;
   width: auto;
   margin-left: 95%;
-  color: #343837;
+  color: #373346;
 }
 
 nav .sidenav {
@@ -102,7 +96,7 @@ nav .sidenav {
   z-index: 1;
   top: 0;
   left: 0;
-  background: linear-gradient(135deg, rgba(3, 113, 156, 0.98), #0f9b8e);
+  background: linear-gradient(135deg, rgba(55, 51, 70, 0.98), #373346);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -118,7 +112,7 @@ nav .sidenav a {
   transition: 0.3s;
 }
 nav .sidenav a:hover {
-  color: #03719C;
+  color: #F7DC2B;
 }
 nav .sidenav .closebtn {
   position: absolute;
@@ -139,20 +133,56 @@ nav .closebtn {
   }
 }
 
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.home__skills {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 5rem;
+}
+.home__skill {
+  margin: 0.6rem;
+}
+.home__skill img {
+  width: 40px;
+  height: auto;
+}
+
 /* background image */
 .hero-image {
-  background-image: url("/img/gamer-monochrome.svg");
+  background-image: url("/img/code-computer.jpeg");
   background-attachment: fixed;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
-  animation-name: moveInBottom;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+  opacity: 0.7;
 }
-.hero-image .hero-text {
+.hero-image:before {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+> * {
+  opacity: 1;
+}
+
+.hero-text {
+  background: linear-gradient(135deg, rgba(55, 51, 70, 0.7), rgba(247, 220, 43, 0.7));
+  padding: 1rem 8rem;
+  border-radius: 5px;
   font-family: "Oswald", sans-serif;
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -163,30 +193,15 @@ nav .closebtn {
   transform: translate(-50%, -50%);
   color: #FFFFFF;
 }
-.hero-image .hero-text__title {
+.hero-text__title {
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-}
-.hero-image .hero-text__subtitle {
-  animation: moveInRight 1s ease-out;
-}
-.hero-image h1 {
   font-size: 3rem;
 }
-.hero-image h3 {
+.hero-text__subtitle {
+  animation: moveInRight 1s ease-out;
   font-size: 4rem;
-}
-
-.hero-image:before {
-  content: "";
-  width: 100%;
-  height: 100vh;
-  display: block;
-  top: 0;
-  left: 0;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.1);
 }
 
 /* Scrollbar custom */
@@ -200,7 +215,7 @@ nav .closebtn {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #03719C;
+  background: #373346;
   border-radius: 10px;
 }
 
@@ -225,6 +240,33 @@ nav .closebtn {
   text-align: center;
 }
 
+/* CLIENTS */
+.work__clients {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem 1rem 5rem 1rem;
+}
+@media screen and (max-width: 960px) {
+  .work__clients {
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 960px) {
+  .work__client {
+    margin: 3rem 1rem;
+  }
+}
+.work__client img {
+  width: 120px;
+  height: auto;
+  filter: grayscale(1);
+}
+.work__client img:hover {
+  filter: none;
+}
+
 /* CARDS */
 @media screen and (min-width: 40em) {
   .cards {
@@ -243,7 +285,7 @@ nav .closebtn {
   }
 }
 .card {
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 1rem;
   padding: 1rem;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
@@ -269,8 +311,8 @@ nav .closebtn {
   margin: 1rem auto;
 }
 .card__tech--spec {
-  border: 1px solid #343837;
-  color: #343837;
+  border: 1px solid #373346;
+  color: #373346;
   /* margin: 0 1rem; */
   border-radius: 30px;
   padding: 5px 20px;
@@ -331,15 +373,15 @@ figure {
 }
 
 .about__passiong {
-  border-left: 7px solid #03719C;
+  border-left: 7px solid #F7DC2B;
   padding-left: 20px;
-  color: #03719C;
+  color: #F7DC2B;
   font-size: 1.4em;
   font-weight: bold;
 }
 .about__img img {
   margin: 2rem;
-  width: 210px;
+  width: 280px;
   height: auto;
 }
 @media screen and (min-width: 960px) {
@@ -349,7 +391,7 @@ figure {
 }
 
 .focus {
-  color: #03719C;
+  color: #F7DC2B;
 }
 
 /* contact */
@@ -422,7 +464,7 @@ select {
 }
 
 .form-style-1 input[type=submit], .form-style-1 input[type=button] {
-  background: #03719C;
+  background: #373346;
   padding: 0.8rem;
   font-size: 1.5rem;
   border: none;
@@ -430,7 +472,6 @@ select {
 }
 
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover {
-  background: #4691A4;
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -463,8 +504,9 @@ select {
 
 .link i {
   transform: scale(5);
-  color: #03719C;
+  color: #373346;
   margin-top: 2rem;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.25));
 }
 
 .link i:hover {
@@ -484,16 +526,16 @@ select {
   font-size: 1.5rem;
   cursor: pointer;
   border-radius: 5px;
-  border: 1px solid #343837;
+  border: 1px solid #373346;
   background-color: antiquewhite;
-  color: #03719C;
+  color: #F7DC2B;
 }
 
 .button:hover {
   transform: scale(1.2) rotate(2deg);
   transition-duration: 0.3s;
   color: antiquewhite;
-  background-color: #0383b5;
+  background-color: #f8e044;
 }
 
 .fa-paper-plane, .fa-user-circle {
@@ -510,7 +552,7 @@ select {
 footer {
   text-align: center;
   padding: 0.5rem;
-  background: linear-gradient(135deg, rgba(15, 155, 142, 0.7), rgba(3, 113, 156, 0.7));
+  background: linear-gradient(135deg, rgba(55, 51, 70, 0.9), rgba(55, 51, 70, 0.6));
   margin-top: 15rem;
   color: white;
 }

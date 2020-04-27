@@ -5,9 +5,9 @@ $font-size-title: 4rem;
 $font-size-text: 1.2rem;
 
 $white: #FFFFFF;
-$primary-color: #343837;
-$secondary-color: #03719C;
-$tertiary-color: #0F9B8E;
+$primary-color: #373346;
+$secondary-color: #F7DC2B;
+$tertiary-color: #373346;
 
 html,
 body {
@@ -24,13 +24,14 @@ h2 {
   padding-left: 2.2rem;
   font-size: $font-size-title;
   color: $white;
-  background: linear-gradient(135deg, rgba($secondary-color, .8), rgba($tertiary-color, .8));
+  background: #373346;
+  //background: linear-gradient(135deg, rgba($secondary-color, .8), rgba($tertiary-color, .8));
   //margin-top:12rem;
 }
 
 h3 {
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.0625em;
+  //letter-spacing: 0.0625em;
 
 }
 
@@ -51,11 +52,11 @@ p {
     margin-top: 1rem;
     text-decoration: none;
     border-radius: 5px;
-    &:hover {
-      background-color: $tertiary-color;
-      color: white;
-      text-decoration: none;
-    }
+    //&:hover {
+    //  background-color: $tertiary-color;
+    //  color: white;
+    //  text-decoration: none;
+    //}
   }
 }
 
@@ -126,7 +127,7 @@ nav {
     z-index: 1;
     top: 0;
     left: 0;
-    background: linear-gradient(135deg, rgba($secondary-color, .98), rgba($tertiary-color, 1));
+    background: linear-gradient(135deg, rgba($primary-color, .98), rgba($tertiary-color, 1));
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -171,23 +172,62 @@ nav {
   }
 }
 
-
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  &__skills {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+  }
+  &__skill {
+    margin: .6rem;
+    img {
+      width: 40px;
+      height: auto;
+    }
+  }
+}
 
 /* background image */
 
 .hero-image {
-  background-image: url("/img/gamer-monochrome.svg");
+  //background-image: url("/img/gamer-monochrome.svg");
+  background-image: url("/img/code-computer.jpeg");
   background-attachment: fixed;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
-  animation-name: moveInBottom;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+  opacity: .7;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    //background: rgba(0, 0, 0, 0.1);
+  }
+
+
+}
+
+> * {
+  opacity: 1;
+}
 
   .hero-text {
+    background: linear-gradient(135deg, rgba($tertiary-color, .7) , rgba($secondary-color, .7));;
+    padding: 1rem 8rem;
+    border-radius: 5px;
     font-family: $font-stack;
     text-align: center;
     font-family: $font-stack;
@@ -201,32 +241,14 @@ nav {
       animation-name: moveInLeft;
       animation-duration: 1s;
       animation-timing-function: ease-out;
+      font-size: 3rem;
     }
     &__subtitle {
       //letter-spacing: 1.75rem;
       animation: moveInRight 1s ease-out;
+      font-size: 4rem;
     }
   }
-
-  h1 {
-    font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 4rem;
-  }
-}
-
-.hero-image:before {
-  content: '';
-  width: 100%;
-  height: 100vh;
-  display: block;
-  top: 0;
-  left: 0;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.1);
-}
 
 
 /* Scrollbar custom */
@@ -241,7 +263,7 @@ nav {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $secondary-color;
+  background: $primary-color;
   border-radius: 10px;
 }
 
@@ -271,6 +293,33 @@ nav {
   }
 }
 
+/* CLIENTS */
+.work {
+  &__clients {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 1rem 5rem 1rem;
+    @media screen and (max-width: 960px) {
+      display: block;
+      text-align: center;
+    }
+  }
+  &__client {
+    @media screen and (max-width: 960px) {
+      margin: 3rem 1rem;
+    }
+    img {
+      width: 120px;
+      height: auto;
+      filter: grayscale(1);
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+}
+
 /* CARDS */
 
 @media screen and (min-width: 40em) {
@@ -292,7 +341,7 @@ nav {
 }
 
 .card {
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 1rem;
   padding: 1rem;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
@@ -396,7 +445,7 @@ figure {
   &__img {
     img {
       margin: 2rem;
-      width: 210px;
+      width: 280px;
       height: auto;
       @media screen and (min-width: 960px) {
         margin: 2rem 4rem 0 2rem;
@@ -476,14 +525,14 @@ select{
 	height: 15rem;
 }
 .form-style-1 input[type=submit], .form-style-1 input[type=button]{
-	background: $secondary-color;
+	background: $primary-color;
   padding: .8rem;
   font-size: 1.5rem;
 	border: none;
 	color: #fff;
 }
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
-	background: #4691A4;
+
 	box-shadow:none;
 	-moz-box-shadow:none;
 	-webkit-box-shadow:none;
@@ -518,8 +567,9 @@ select{
 .link i {
   transform: scale(5);
   //padding: 1rem 0rem 1rem 2rem;
-  color: $secondary-color;
+  color: $primary-color;
   margin-top: 2rem;
+  filter: drop-shadow(2px 4px 6px rgba(0,0,0, .25));
 }
 
 .link i:hover {
@@ -569,7 +619,7 @@ select{
 footer {
   text-align: center;
   padding: 0.5rem;
-  background: linear-gradient(135deg, rgba($tertiary-color, .7) , rgba($secondary-color, .7));
+  background: linear-gradient(135deg, rgba($primary-color, .9) , rgba($primary-color, .6));
   margin-top: 15rem;
   color: white;
   > p {
